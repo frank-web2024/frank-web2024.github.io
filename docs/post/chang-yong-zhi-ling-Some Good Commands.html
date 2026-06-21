@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="本页整理普通玩家会用到的指令。">
+<meta property="og:title" content="常用指令Some Good Commands">
+<meta property="og:description" content="本页整理普通玩家会用到的指令。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="marssss.qzz.io/post/chang-yong-zhi-ling-Some%20Good%20Commands.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>常用指令Some Good Commands</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">常用指令Some Good Commands</h1>
+<div class="title-right">
+    <a href="marssss.qzz.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/frank-web2024/frank-web2024.github.io/issues/9" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>本页整理普通玩家会用到的指令。新玩家默认为黄名身份，考察通过后会成为白名正式成员；管理员命令不在本页列出。</p>
+<p>需要查询原版命令完整语法时，请直接查看文末的「原版指令参考」。</p>
+<h2>传送与位置</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td>主城</td><td><code class="notranslate">/spawn</code></td><td>回到主城</td></tr>
+<tr><td>原版传送</td><td><a href="https://zh.minecraft.wiki/w/命令/tp" rel="nofollow"><code class="notranslate">/tp</code></a></td><td>传送到指定坐标或玩家位置</td></tr>
+<tr><td rowspan="5">家</td><td><code class="notranslate">/sethome &lt;名字&gt;</code></td><td>把当前位置保存为一个家</td></tr>
+<tr><td><code class="notranslate">/home</code> 或 <code class="notranslate">/home gui</code></td><td>打开家菜单</td></tr>
+<tr><td><code class="notranslate">/home &lt;名字&gt;</code></td><td>直接回到指定的家</td></tr>
+<tr><td><code class="notranslate">/home icon &lt;材质&gt; &lt;名字&gt;</code></td><td>把指定材质设置为家的图标，例如 <code class="notranslate">/home icon diamond_block home</code></td></tr>
+<tr><td><code class="notranslate">/delhome &lt;名字&gt;</code></td><td>删除指定的家；新成员最多 2 个家，正式成员最多 20 个家</td></tr>
+<tr><td rowspan="3">返回历史位置</td><td><code class="notranslate">/back</code></td><td>返回上一次传送或死亡前的位置</td></tr>
+<tr><td><code class="notranslate">/back [次数]</code></td><td>一次回退多条历史记录</td></tr>
+<tr><td><code class="notranslate">/back undo</code> 或 <code class="notranslate">/reback</code></td><td>撤销上一次返回，回到刚才的位置</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>状态与服务器信息</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2">挂机状态</td><td><code class="notranslate">/afk</code></td><td>切换挂机状态</td></tr>
+<tr><td><code class="notranslate">/afk &lt;状态&gt;</code></td><td>进入挂机并把自定义状态显示在头顶和 Tab 列表，最多 12 个字</td></tr>
+<tr><td>公告</td><td><code class="notranslate">/announcements</code></td><td>打开服务器公告菜单</td></tr>
+<tr><td>小提示</td><td><code class="notranslate">/tip</code></td><td>查看一条服务器小提示</td></tr>
+<tr><td>主菜单</td><td><code class="notranslate">/menu</code></td><td>打开主菜单</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>建筑与创作</h2>
+<h3>Axiom</h3>
+<p><strong>Axiom</strong> 是一款功能强大的一体化 Minecraft 世界编辑模组，支持实时地形雕刻、建筑辅助、笔刷工具等专业功能。</p>
+<ul>
+<li><a href="https://modrinth.com/mod/axiom" rel="nofollow">Modrinth 模组页面</a> — 下载模组本体</li>
+<li><a href="https://hi-ysumc.feishu.cn/wiki/QDJBwtCBEi5eLakfWCvcRtErnvb" rel="nofollow">服务器 Axiom 使用教程</a> — 本服专属使用指南</li>
+</ul>
+<blockquote>
+<p><strong>快捷键提示：</strong></p>
+<ul>
+<li>在创造模式下按住 <code class="notranslate">左 Alt</code> 打开 Builder 菜单</li>
+<li>按 <code class="notranslate">右 Shift</code> 进入 Editor 模式（地形编辑、笔刷工具等）</li>
+</ul>
+</blockquote>
+<h3>创世神（WorldEdit）</h3>
+<p><strong>WorldEdit</strong> 是经典的建筑辅助插件，适合快速复制、粘贴、旋转建筑结构，以及大范围地形调整。配合 Axiom 使用效果更佳。</p>
+<p>服务器已内置 WorldEdit 插件，玩家无需在客户端安装相关 Mod，加入服务器后即可直接使用。</p>
+<ul>
+<li><a href="https://www.mcmod.cn/post/3050.html" rel="nofollow">常用命令一览(中文)</a></li>
+<li><a href="https://www.mcmod.cn/post/3533.html" rel="nofollow">完整命令收录(中文)</a></li>
+<li><a href="https://intellectualsites.gitbook.io/fastasyncworldedit/features/main-commands-and-permissions" rel="nofollow">官方命令列表(英文)</a></li>
+</ul>
+<h2>装饰与互动</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td>装饰头颅</td><td><code class="notranslate">/headdb</code></td><td>打开装饰头颅数据库，获取各类装饰用头颅</td></tr>
+<tr><td>帽子</td><td><code class="notranslate">/hat</code></td><td>将手中持有的物品戴到头上</td></tr>
+<tr><td rowspan="4">名称标签</td><td><code class="notranslate">/nametag</code></td><td>查看当前自定义前缀和后缀</td></tr>
+<tr><td><code class="notranslate">/nametag prefix set &lt;内容&gt;</code></td><td>设置名称前缀，需要正式成员权限</td></tr>
+<tr><td><code class="notranslate">/nametag suffix set &lt;内容&gt;</code></td><td>设置名称后缀，需要正式成员权限</td></tr>
+<tr><td><code class="notranslate">/nametag clear</code></td><td>清除自定义前缀和后缀</td></tr>
+<tr><td>盔甲架</td><td><code class="notranslate">/asedit give</code></td><td>获取盔甲架编辑器</td></tr>
+<tr><td rowspan="2">隐形展示框</td><td><code class="notranslate">/imageframe giveinvisibleframe glowing</code></td><td>获取发光隐形展示框</td></tr>
+<tr><td><code class="notranslate">/imageframe giveinvisibleframe regular</code></td><td>获取普通隐形展示框</td></tr>
+<tr><td rowspan="3">姿势动作</td><td><code class="notranslate">/sit</code></td><td>坐下</td></tr>
+<tr><td><code class="notranslate">/lay</code></td><td>躺下</td></tr>
+<tr><td><code class="notranslate">/crawl</code></td><td>爬行</td></tr>
+<tr><td>垃圾桶</td><td><code class="notranslate">/trash</code></td><td>打开垃圾桶界面，放入其中的物品将被永久销毁</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>物品与世界管理</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2">清理掉落物</td><td><code class="notranslate">/rmitems</code></td><td>按默认 50 格半径清理周围掉落物</td></tr>
+<tr><td><code class="notranslate">/rmitems &lt;半径&gt;</code></td><td>按指定半径清理掉落物，例如 <code class="notranslate">/rmitems 20</code></td></tr>
+<tr><td>临时白名单</td><td><code class="notranslate">/tempwhitelist &lt;玩家名&gt;</code></td><td>为朋友添加 1 小时临时白名单，需要正式成员权限</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<blockquote>
+<p>黄名玩家（新成员默认身份）无法使用 <code class="notranslate">/rmitems</code> 和 <code class="notranslate">/tempwhitelist</code>。</p>
+</blockquote>
+<h2>音乐与娱乐</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="5">音乐</td><td><code class="notranslate">/music</code></td><td>打开音乐控制台，需要安装 <a href="https://modrinth.com/plugin/plasmo-voice" rel="nofollow">PlasmoVoice</a> 模组</td></tr>
+<tr><td><code class="notranslate">/music search &lt;关键词&gt;</code></td><td>搜索歌曲</td></tr>
+<tr><td><code class="notranslate">/music page &lt;页码&gt;</code></td><td>切换音乐列表页码</td></tr>
+<tr><td><code class="notranslate">/music random</code></td><td>获得一张随机唱片</td></tr>
+<tr><td><code class="notranslate">/music randomplay</code></td><td>在最近的唱片机播放随机音乐</td></tr>
+<tr><td>烟花</td><td><code class="notranslate">/firework gun</code></td><td>获取一把随机烟花发射器</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>PVP 控制</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td>PVP 状态</td><td><code class="notranslate">/pvp</code></td><td>手动开启或关闭 PVP 状态，服务器默认禁止 PVP</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<blockquote>
+<p>PVP 默认处于关闭状态，请在双方同意的前提下开启。</p>
+</blockquote>
+<h2>小游戏</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr><th scope="col">功能</th><th scope="col">常用用法</th><th scope="col">说明</th></tr>
+</thead>
+<tbody>
+<tr><td>跑酷</td><td><code class="notranslate">/apk start</code></td><td>开始跑酷挑战，难度随进度递增</td></tr>
+<tr><td>谁是杀手</td><td><code class="notranslate">/spy</code></td><td>进入「谁是杀手」小游戏</td></tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>原版指令参考</h2>
+<p>服务器支持以下原版指令，点击命令名可跳转至 Minecraft Wiki 查看完整语法与详细说明：</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>指令</th>
+<th>说明</th>
+<th align="center">需要正式成员</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/attribute" rel="nofollow"><code class="notranslate">/attribute</code></a></td>
+<td>查询或修改实体的属性值</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/clear" rel="nofollow"><code class="notranslate">/clear</code></a></td>
+<td>清除玩家背包中的物品</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/damage" rel="nofollow"><code class="notranslate">/damage</code></a></td>
+<td>对实体造成指定类型与数值的伤害</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/effect" rel="nofollow"><code class="notranslate">/effect</code></a></td>
+<td>为实体添加或清除状态效果</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/enchant" rel="nofollow"><code class="notranslate">/enchant</code></a></td>
+<td>为玩家手持物品附魔</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/fill" rel="nofollow"><code class="notranslate">/fill</code></a></td>
+<td>用指定方块填充区域</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/gamemode" rel="nofollow"><code class="notranslate">/gamemode</code></a></td>
+<td>切换玩家游戏模式</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/give" rel="nofollow"><code class="notranslate">/give</code></a></td>
+<td>给予玩家指定物品</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/item" rel="nofollow"><code class="notranslate">/item</code></a></td>
+<td>修改容器或实体装备栏中的物品</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/ride" rel="nofollow"><code class="notranslate">/ride</code></a></td>
+<td>控制实体的骑乘关系</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save" rel="nofollow"><code class="notranslate">/save-all</code></a></td>
+<td>立即保存服务器世界数据</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/seed" rel="nofollow"><code class="notranslate">/seed</code></a></td>
+<td>显示当前世界的种子</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/setblock" rel="nofollow"><code class="notranslate">/setblock</code></a></td>
+<td>在指定位置放置方块</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/summon" rel="nofollow"><code class="notranslate">/summon</code></a></td>
+<td>在指定位置生成实体</td>
+<td align="center">✔</td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/tp" rel="nofollow"><code class="notranslate">/tp</code></a></td>
+<td>传送实体到指定位置或其他实体处</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/tellraw" rel="nofollow"><code class="notranslate">/tellraw</code></a></td>
+<td>向玩家发送格式化的 JSON 文本消息</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/time" rel="nofollow"><code class="notranslate">/time</code></a></td>
+<td>查询或修改世界时间</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td><a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/weather" rel="nofollow"><code class="notranslate">/weather</code></a></td>
+<td>切换世界天气</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="marssss.qzz.io">marsssssssssss blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","frank-web2024/frank-web2024.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
